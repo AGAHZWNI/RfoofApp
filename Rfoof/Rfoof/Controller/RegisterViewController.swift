@@ -77,11 +77,64 @@ class RegisterViewController: UIViewController {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             
             Auth.auth().createUser(withEmail: email, password: password) { authResult,error in
-        
-                
+                        
            //     print("with Result",authResult,authResult?.user.uid)
                 
+                if let error = error {
+                    
+                    print("Registration Auth Error" , error.localizedDescription)
+                }
                 
+                
+                
+                if let authResult = authResult {
+                   
+                let storageRef = Storage.storage().reference(withPath: "users/\(authResult.user.uid)")
+                    
+                    let uploadMeta = StorageMetadata.init()
+                    uploadMeta.contentType = "image/jpeg"
+                    
+                    storageRef.putData(imageData, metadata: uploadMeta){storageMeta, error in
+                        if let error = error {
+                            print("Registration storage Error", error.localizedDescription)
+                        }
+                        storageRef.downloadURL {url,error in
+                          
+                            if let url = url {
+                                print("URL",url.absoluteString)
+                                let db = Firestore.firestore()
+                                let userData :[String:String] = [
+                                    
+                                    "id" : authResult.user.uid,
+                                    "name" : name,
+                                    "email" : email,
+                                    "number" : number,
+                                    "imageUrl" : url.absoluteString
+                                
+                                ]
+                                
+                                db.collection("users").document(authResult.user.uid).setData(userData) {error in
+                                    if let error = error {
+                                        print("Registration Database Error", error.localizedDescription)
+                                    }else {
+                                        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController")as?UITabBarController {
+                                            vc.modalPresentationStyle = .fullScreen
+                                            
+                                         //   Activity.removeIndicator(parentView: self, childView: self.activityIndicator)
+                                            
+                                            self.present (vc,animated: true,completion: nil)
+                                        }
+                                    }
+                                }
+                            
+                            }
+                            
+                        }
+                    }
+                        
+                
+                
+                }
         }
         
     }

@@ -6,9 +6,27 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
-
+var products = [Product]()
+    var selectedProduct:Product?
+    var selectedProductImage:UIImage?
+    
+    
+    @IBOutlet weak var productTableView: UITableView!
+        
+    
+//    didSet {
+//        productTableView.delegate = self
+//        productTableView.dataSource = self
+//        productTableView.register(UINib(nibName: "productCell", bundle: nil)).addSnapshotListener { snapshot,error in if let error = error {
+//
+//        }
+//
+  //  }
+    
+  //  }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +34,6 @@ class HomeViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

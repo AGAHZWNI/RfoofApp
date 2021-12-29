@@ -121,10 +121,25 @@
                     <view key="view" contentMode="scaleToFill" id="bT0-RI-9O9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vNh-ob-zL4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ysI-3R-Wfw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vNh-ob-zL4" firstAttribute="leading" secondItem="ysI-3R-Wfw" secondAttribute="leading" id="2rz-Qa-liT"/>
+                            <constraint firstItem="ysI-3R-Wfw" firstAttribute="trailing" secondItem="vNh-ob-zL4" secondAttribute="trailing" id="R1f-si-jk4"/>
+                            <constraint firstItem="ysI-3R-Wfw" firstAttribute="bottom" secondItem="vNh-ob-zL4" secondAttribute="bottom" id="ZlP-EG-iM9"/>
+                            <constraint firstItem="vNh-ob-zL4" firstAttribute="top" secondItem="ysI-3R-Wfw" secondAttribute="top" id="vT2-cN-l2g"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="homekit" catalog="system" id="kCz-xe-yld"/>
+                    <connections>
+                        <outlet property="productTableView" destination="vNh-ob-zL4" id="jjA-eT-w0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHB-Jw-OVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +345,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EBX-T4-oaB"/>
+        <segue reference="siz-7h-Rt1"/>
         <segue reference="PCA-PQ-mP6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemTealColor"/>
