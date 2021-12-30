@@ -120,7 +120,7 @@ class RegisterViewController: UIViewController {
                                         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController")as?UITabBarController {
                                             vc.modalPresentationStyle = .fullScreen
                                             
-                                         //   Activity.removeIndicator(parentView: self, childView: self.activityIndicator)
+                                            Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                             
                                             self.present (vc,animated: true,completion: nil)
                                         }

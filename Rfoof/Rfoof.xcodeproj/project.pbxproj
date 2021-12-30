@@ -27,6 +27,10 @@
 		FB71A97A2779B8E2001F9843 /* RfoofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71A9792779B8E2001F9843 /* RfoofTests.swift */; };
 		FB71A9842779B8E2001F9843 /* RfoofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71A9832779B8E2001F9843 /* RfoofUITests.swift */; };
 		FB71A9862779B8E2001F9843 /* RfoofUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71A9852779B8E2001F9843 /* RfoofUITestsLaunchTests.swift */; };
+		FBC17412277C43EB00A79D93 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC17410277C43EB00A79D93 /* ProductCell.swift */; };
+		FBC17413277C43EB00A79D93 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC17411277C43EB00A79D93 /* ProductCell.xib */; };
+		FBC17415277C4BBF00A79D93 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC17414277C4BBF00A79D93 /* ProductViewController.swift */; };
+		FBC17417277C4C8D00A79D93 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC17416277C4C8D00A79D93 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		FB71A97F2779B8E2001F9843 /* RfoofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RfoofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB71A9832779B8E2001F9843 /* RfoofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RfoofUITests.swift; sourceTree = "<group>"; };
 		FB71A9852779B8E2001F9843 /* RfoofUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RfoofUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBC17410277C43EB00A79D93 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FBC17411277C43EB00A79D93 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		FBC17414277C4BBF00A79D93 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		FBC17416277C4C8D00A79D93 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,8 @@
 				FB64970A2779DC790099071D /* LoginViewController.swift */,
 				FB1593ED2779E14E00825A61 /* ProfileViewController.swift */,
 				FB1593EF2779E83A00825A61 /* HomeViewController.swift */,
+				FBC17414277C4BBF00A79D93 /* ProductViewController.swift */,
+				FBC17416277C4C8D00A79D93 /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,8 +155,8 @@
 				FB71A9622779B8DE001F9843 /* AppDelegate.swift */,
 				FB71A9642779B8DE001F9843 /* SceneDelegate.swift */,
 				FB62FFAD277B2857002C7216 /* Activity.swift */,
-				FB71A9682779B8DE001F9843 /* Main.storyboard */,
 				FB62FFA7277AE8B0002C7216 /* Model */,
+				FBC1740F277C43A100A79D93 /* View */,
 				FB62FFAC277AF4AE002C7216 /* Controller */,
 				FB71A96B2779B8E1001F9843 /* Assets.xcassets */,
 				FB71A96D2779B8E1001F9843 /* LaunchScreen.storyboard */,
@@ -171,6 +181,16 @@
 				FB71A9852779B8E2001F9843 /* RfoofUITestsLaunchTests.swift */,
 			);
 			path = RfoofUITests;
+			sourceTree = "<group>";
+		};
+		FBC1740F277C43A100A79D93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB71A9682779B8DE001F9843 /* Main.storyboard */,
+				FBC17410277C43EB00A79D93 /* ProductCell.swift */,
+				FBC17411277C43EB00A79D93 /* ProductCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +307,7 @@
 			files = (
 				FB71A96F2779B8E1001F9843 /* LaunchScreen.storyboard in Resources */,
 				FB71A96C2779B8E1001F9843 /* Assets.xcassets in Resources */,
+				FBC17413277C43EB00A79D93 /* ProductCell.xib in Resources */,
 				FB71A96A2779B8DE001F9843 /* Main.storyboard in Resources */,
 				FB6497002779D1520099071D /* GoogleService-Info.plist in Resources */,
 			);
@@ -314,14 +335,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB62FFAE277B2858002C7216 /* Activity.swift in Sources */,
+				FBC17412277C43EB00A79D93 /* ProductCell.swift in Sources */,
 				FB1593EE2779E14E00825A61 /* ProfileViewController.swift in Sources */,
 				FB71A9672779B8DE001F9843 /* LandingViewController.swift in Sources */,
 				FB62FFAB277AEF40002C7216 /* Product.swift in Sources */,
 				FB71A9632779B8DE001F9843 /* AppDelegate.swift in Sources */,
+				FBC17415277C4BBF00A79D93 /* ProductViewController.swift in Sources */,
 				FB71A9652779B8DE001F9843 /* SceneDelegate.swift in Sources */,
 				FB62FFA9277AE91B002C7216 /* User.swift in Sources */,
 				FB64970B2779DC790099071D /* LoginViewController.swift in Sources */,
 				FB1593F02779E83A00825A61 /* HomeViewController.swift in Sources */,
+				FBC17417277C4C8D00A79D93 /* DetailsViewController.swift in Sources */,
 				FB6497092779DC1A0099071D /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
