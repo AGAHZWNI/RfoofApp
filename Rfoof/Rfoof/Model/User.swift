@@ -20,12 +20,13 @@ struct User {
            let name = idct ["name"] as? String,
             let email = idct ["email"] as? String,
            let imageUrl = idct ["imageUrl"] as? String,
-           let number = idct ["number"] as? String{
+           let number = idct ["number"] as? String {
            
             self.id = id
             self.name = name
             self.email = email
             self.imageUrl = imageUrl
+            self.number = number
     }
 }
 }

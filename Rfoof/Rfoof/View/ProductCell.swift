@@ -33,12 +33,16 @@ class ProductCell: UITableViewCell {
     }
     
     func configure(wiht product:Product) -> UITableViewCell {
+        
         ProductTitleLabel.text = product.title
+      //  ProductTitleLabel.text = product.title
+        
         userNameLabel.text = product.user.name
         
-       
+        userImageView.loadImageUsingCache(with: product.user.imageUrl)
         
-        
+        ProductImageView.loadImageUsingCache(with: product.imageUrl)
+
     
      
        
