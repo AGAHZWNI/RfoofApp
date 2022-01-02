@@ -173,7 +173,7 @@ extension RegisterViewController : UIImagePickerControllerDelegate,UINavigationC
     func getImage (from sourceType : UIImagePickerController.SourceType){
         if UIImagePickerController.isSourceTypeAvailable(sourceType) {
             imagePickerController.sourceType = sourceType
-            self.present(imagePickerController,animated: true, completion: nil)
+           self.present(imagePickerController,animated: true, completion: nil)
     }
         
         
