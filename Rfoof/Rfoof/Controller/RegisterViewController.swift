@@ -34,9 +34,11 @@ class RegisterViewController: UIViewController {
     
     }
     
-    
-    
-    
+    @IBOutlet weak var nameRegisterLabel: UILabel!
+    @IBOutlet weak var emailRegisterLabel: UILabel!
+    @IBOutlet weak var passwoardRegisterLabel: UILabel!
+    @IBOutlet weak var confirmRegisterLabel: UILabel!
+    @IBOutlet weak var numberRegisterLabel: UILabel!
     
     
     
@@ -51,12 +53,24 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var numberTextField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imagePickerController.delegate = self
+        
+    
+//        nameRegisterLabel.text = "".localized
+//        emailRegisterLabel.text = "".localized
+//        passwoardRegisterLabel.text = "".localized
+//        confirmRegisterLabel.text = "".localized
+//        nameRegisterLabel.text = "".localized
+//        
+        
+     //   regesterButton.setTitle("Register".localized, for: .normal)
+        
+    
+        
+        
         
     //    imagePickerController.dataSource = self
         

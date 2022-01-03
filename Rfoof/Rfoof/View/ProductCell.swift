@@ -32,11 +32,10 @@ class ProductCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(wiht product:Product) -> UITableViewCell {
+    func configure(wiht product: Product) -> UITableViewCell {
         
         ProductTitleLabel.text = product.title
         
-      //  ProductTitleLabel.text = product.title
         
         userNameLabel.text = product.user.name
         
@@ -48,9 +47,9 @@ class ProductCell: UITableViewCell {
         ProductImageView.loadImageUsingCache(with: product.imageUrl)
 
     
-     
-       
         return self
+        
+        
     }
     
     override func prepareForReuse() {

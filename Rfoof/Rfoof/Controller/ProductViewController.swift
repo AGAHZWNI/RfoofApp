@@ -93,8 +93,7 @@ class ProductViewController: UIViewController {
            let imageData = image.jpegData(compressionQuality: 0.50),
            let title = productTitleTextField.text,
            let description = productDescriptionTextField.text,
-           
-            
+           let price = productPriceTextField.text,
             let currentUser = Auth.auth().currentUser {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             
@@ -127,6 +126,7 @@ class ProductViewController: UIViewController {
                             productData = [
                                 "userId" : selectedProduct.user.id,
                                 "title" : title,
+                                "price" :price,
                                 "description": description,
                                 "imageUrl": url.absoluteString,
                                 "createdAt":selectedProduct.createdAt ?? FieldValue.serverTimestamp(),
@@ -139,6 +139,7 @@ class ProductViewController: UIViewController {
                             
                                 "userId" : currentUser.uid,
                                 "title" : title,
+                                "price": price,
                                 "description": description,
                                 "imageUrl": url.absoluteString,
                                 "createdAt":FieldValue.serverTimestamp(),

@@ -104,17 +104,17 @@
             <objects>
                 <viewController id="wIs-EH-SZl" customClass="LoginViewController" customModule="Rfoof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TnN-ID-Nne">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-XL-Dl2">
-                                <rect key="frame" x="16" y="126" width="343" height="331"/>
+                                <rect key="frame" x="16" y="82" width="337" height="331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-pF-qzY">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="140"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqf-nB-S1z">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="HKh-YU-k4x"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="337" id="gQ0-oi-nqd"/>
@@ -124,7 +124,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXW-Kp-CiK">
-                                                <rect key="frame" x="0.0" y="31" width="343" height="34"/>
+                                                <rect key="frame" x="0.0" y="31" width="337" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="337" id="5Dz-1b-4GG"/>
                                                     <constraint firstAttribute="height" constant="34" id="Ae9-qO-Ksa"/>
@@ -133,7 +133,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51y-Qb-xlp">
-                                                <rect key="frame" x="0.0" y="75" width="343" height="21"/>
+                                                <rect key="frame" x="0.0" y="75" width="337" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="KB8-gu-5eC"/>
                                                 </constraints>
@@ -142,7 +142,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A09-uY-dpS">
-                                                <rect key="frame" x="0.0" y="106" width="343" height="34"/>
+                                                <rect key="frame" x="0.0" y="106" width="337" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="ObA-pY-I9V"/>
                                                     <constraint firstAttribute="width" constant="337" id="wmJ-81-tLZ"/>
@@ -153,10 +153,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="yX8-mq-TRq">
-                                        <rect key="frame" x="0.0" y="226" width="343" height="105"/>
+                                        <rect key="frame" x="0.0" y="226" width="337" height="105"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10M-s4-MUN">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="43"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="J2y-1f-21L"/>
@@ -168,7 +168,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAJ-Fp-ZS7">
-                                                <rect key="frame" x="0.0" y="62" width="343" height="43"/>
+                                                <rect key="frame" x="0.0" y="62" width="337" height="43"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="akA-fS-aAm"/>
@@ -194,7 +194,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="5WX-6L-4yX"/>
                     <connections>
+                        <outlet property="emailLoginLabel" destination="Kqf-nB-S1z" id="8tu-lq-rzn"/>
                         <outlet property="emailTextField" destination="kXW-Kp-CiK" id="svA-xI-zBX"/>
+                        <outlet property="passwordLoginLabel" destination="51y-Qb-xlp" id="iQI-6S-RQW"/>
                         <outlet property="passwordTextField" destination="A09-uY-dpS" id="zpc-tc-FJo"/>
                     </connections>
                 </viewController>
@@ -456,10 +458,14 @@
                     <navigationItem key="navigationItem" id="iKv-Db-A74"/>
                     <connections>
                         <outlet property="ProductImageView" destination="7KJ-9s-aRE" id="ClF-6T-2On"/>
+                        <outlet property="descriptionDetailsLabel" destination="FBq-h9-cwx" id="iWw-fu-LKR"/>
+                        <outlet property="numberDetailsLabel" destination="6IE-MA-tPa" id="bFq-vn-17Z"/>
                         <outlet property="numberLabel" destination="Rnh-hw-6BJ" id="zWU-gG-2Mg"/>
+                        <outlet property="priceDetailsLabel" destination="9HJ-HR-wir" id="aLh-uV-Qkg"/>
                         <outlet property="productDescriptionLabel" destination="xCI-5a-8x4" id="7zH-Ba-xTQ"/>
                         <outlet property="productPriceLabel" destination="OlF-ZO-VXJ" id="vVb-QI-dni"/>
                         <outlet property="productTitleLabel" destination="39Q-Ah-HtV" id="pDu-Lo-opW"/>
+                        <outlet property="titleDetailsLabel" destination="vpR-aC-bGK" id="p70-8L-gyM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZT-f2-rbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -544,7 +550,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="UCK-ps-i2a"/>
                     <connections>
-                        <outlet property="descriptionProfileLabel" destination="P2J-aI-Wbh" id="8Fz-ob-2Ua"/>
+                        <outlet property="ddescriptionLabel" destination="Aal-ft-iJi" id="7hH-cP-NaS"/>
+                        <outlet property="descriptionProfileLabel" destination="P2J-aI-Wbh" id="55H-Rb-ZbG"/>
+                        <outlet property="nameProfileLabel" destination="Z5f-UN-IFV" id="x2p-oi-5yR"/>
+                        <outlet property="numberProfileLabel" destination="HxB-1O-wbe" id="N33-PM-d0E"/>
                         <outlet property="profileImageView" destination="G2R-8S-JfZ" id="gQY-QV-LTc"/>
                         <outlet property="userNameLabel" destination="Cyg-uO-nEw" id="gps-Kj-SjT"/>
                         <outlet property="userNumberLabel" destination="Lax-0d-Kgb" id="Koi-Ck-ib2"/>
@@ -552,18 +561,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6W-nT-2py" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="1313"/>
+            <point key="canvasLocation" x="1333.5999999999999" y="1312.8935532233884"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="a4D-tI-keB">
             <objects>
                 <viewController id="7jc-Mk-AWg" customClass="RegisterViewController" customModule="Rfoof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Abo-SR-cBT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-IE-KdO">
-                                <rect key="frame" x="130.5" y="74" width="114" height="96"/>
+                                <rect key="frame" x="130.5" y="30" width="114" height="96"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zVe-qP-x9C">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="96"/>
@@ -582,7 +591,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lNQ-Fb-pPB">
-                                <rect key="frame" x="16" y="178" width="343" height="491"/>
+                                <rect key="frame" x="16" y="134" width="343" height="491"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6do-VZ-hq6">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="37"/>
@@ -720,9 +729,14 @@
                     <navigationItem key="navigationItem" id="1w8-sQ-A8B"/>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="2qf-yu-RBx" id="fGt-8i-M8U"/>
+                        <outlet property="confirmRegisterLabel" destination="Qla-uO-RFD" id="J0l-nu-6Nk"/>
+                        <outlet property="emailRegisterLabel" destination="ch4-xn-4eO" id="rkj-qk-2j8"/>
                         <outlet property="emailTextField" destination="C8q-dp-sGi" id="IzG-Np-E9w"/>
+                        <outlet property="nameRegisterLabel" destination="6do-VZ-hq6" id="bx1-fL-UuY"/>
                         <outlet property="nameTextField" destination="x4p-mf-OlC" id="5vI-Ol-Nqa"/>
+                        <outlet property="numberRegisterLabel" destination="I66-rR-dmS" id="5bM-Ms-Wfz"/>
                         <outlet property="numberTextField" destination="FjK-l1-KiJ" id="UTC-FD-fnp"/>
+                        <outlet property="passwoardRegisterLabel" destination="16Z-tO-Pgd" id="ce8-Yk-ueU"/>
                         <outlet property="passwordTextField" destination="vVb-OW-gGR" id="TWp-OT-gMV"/>
                         <outlet property="userImageView" destination="ttL-Qu-en9" id="HqR-Uh-slK"/>
                     </connections>
@@ -789,9 +803,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="siz-7h-Rt1"/>
+        <segue reference="EBX-T4-oaB"/>
         <segue reference="Ov2-hJ-pSL"/>
-        <segue reference="4S1-kM-iGK"/>
+        <segue reference="PCA-PQ-mP6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemTealColor"/>
     <resources>

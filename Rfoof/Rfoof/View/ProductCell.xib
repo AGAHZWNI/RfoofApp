@@ -105,10 +105,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="ProductImageView" destination="5DL-qP-oio" id="92M-rx-3cA"/>
-                <outlet property="ProductTitleLabel" destination="kpf-HN-sPT" id="D54-pC-Txx"/>
-                <outlet property="userImageView" destination="h02-pM-BP6" id="fyJ-8T-Ttw"/>
-                <outlet property="userNameLabel" destination="E6B-7u-jih" id="FIj-ms-bRK"/>
+                <outlet property="ProductImageView" destination="5DL-qP-oio" id="8Da-tA-lPi"/>
+                <outlet property="ProductTitleLabel" destination="kpf-HN-sPT" id="1cP-e7-4hd"/>
+                <outlet property="userImageView" destination="h02-pM-BP6" id="CIc-NO-uEQ"/>
+                <outlet property="userNameLabel" destination="E6B-7u-jih" id="7E5-MJ-JPV"/>
             </connections>
             <point key="canvasLocation" x="150" y="-15.401785714285714"/>
         </tableViewCell>

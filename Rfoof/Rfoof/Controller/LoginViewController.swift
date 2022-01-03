@@ -17,9 +17,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-
+    @IBOutlet weak var emailLoginLabel: UILabel!
+    
+    @IBOutlet weak var passwordLoginLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        emailLoginLabel.text?.localized
+//        passwordLoginLabel.text?.localized
+//        
 
         // Do any additional setup after loading the view.
     }

@@ -22,11 +22,12 @@ struct Product {
     init (idct :[String:Any], id : String ,user : User){
         
    if let title = idct ["title"] as? String,
+      let userId = idct ["userId"] as? String,
       let description = idct ["description"] as? String,
       let imageUrl = idct ["imageUrl"] as? String,
       let price = idct ["price"] as? String,
       let createdAt = idct ["createdAt"] as? Timestamp {
-       
+       self.userId = userId
        self.title = title
        self.description = description
        self.imageUrl = imageUrl

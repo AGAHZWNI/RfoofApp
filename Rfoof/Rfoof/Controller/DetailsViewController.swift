@@ -31,9 +31,35 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     
     
+   // _______________________________________
+    
+    @IBOutlet weak var titleDetailsLabel: UILabel!
+    
+    @IBOutlet weak var descriptionDetailsLabel: UILabel!
+    
+    @IBOutlet weak var priceDetailsLabel: UILabel!
+    
+    
+    @IBOutlet weak var numberDetailsLabel: UILabel!
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        titleDetailsLabel.text = "".localized
+//        descriptionDetailsLabel.text = "".localized
+//        priceDetailsLabel.text = "".localized
+//        numberDetailsLabel.text = "".localized
+//        
+        
+        
+        
+        
 
         if let selectedProduct = selectedProduct,
            let selectedImage = selectedProductImage {
