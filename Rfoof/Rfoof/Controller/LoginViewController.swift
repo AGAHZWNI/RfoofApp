@@ -16,18 +16,31 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    //-------------------------------------
     
     @IBOutlet weak var emailLoginLabel: UILabel!
     
     @IBOutlet weak var passwordLoginLabel: UILabel!
     
+    @IBOutlet weak var loginButtontwo: UIButton!
+    
+    @IBOutlet weak var registerButtonTwo: UIButton!
+    
+    //------------------------------------------
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        emailLoginLabel.text?.localized
-//        passwordLoginLabel.text?.localized
-//        
+        
+        //-------------------------------------
+        emailLoginLabel.text = "Email".localized
+        passwordLoginLabel.text = "Password".localized
+        
+        loginButtontwo.setTitle("Login".localized, for: .normal)
+        
+        registerButtonTwo.setTitle("Register".localized, for: .normal)
+        
+        //---------------------------------------
 
         // Do any additional setup after loading the view.
     }

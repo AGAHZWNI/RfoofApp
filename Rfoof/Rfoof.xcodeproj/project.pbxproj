@@ -33,6 +33,7 @@
 		FBC17413277C43EB00A79D93 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC17411277C43EB00A79D93 /* ProductCell.xib */; };
 		FBC17415277C4BBF00A79D93 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC17414277C4BBF00A79D93 /* ProductViewController.swift */; };
 		FBC17417277C4C8D00A79D93 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC17416277C4C8D00A79D93 /* DetailsViewController.swift */; };
+		FBD96144278429D3005A7029 /* BundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD96143278429D3005A7029 /* BundleExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		FBC17411277C43EB00A79D93 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		FBC17414277C4BBF00A79D93 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FBC17416277C4C8D00A79D93 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FBD96143278429D3005A7029 /* BundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				FB71A9642779B8DE001F9843 /* SceneDelegate.swift */,
 				FB5DA4C5277F85E500F52724 /* ImageView.swift */,
 				FB62FFAD277B2857002C7216 /* Activity.swift */,
+				FBD96143278429D3005A7029 /* BundleExtention.swift */,
 				FB62FFA7277AE8B0002C7216 /* Model */,
 				FBC1740F277C43A100A79D93 /* View */,
 				FB62FFAC277AF4AE002C7216 /* Controller */,
@@ -360,6 +363,7 @@
 				FB71A9652779B8DE001F9843 /* SceneDelegate.swift in Sources */,
 				FB62FFA9277AE91B002C7216 /* User.swift in Sources */,
 				FB64970B2779DC790099071D /* LoginViewController.swift in Sources */,
+				FBD96144278429D3005A7029 /* BundleExtention.swift in Sources */,
 				FB1593F02779E83A00825A61 /* HomeViewController.swift in Sources */,
 				FBC17417277C4C8D00A79D93 /* DetailsViewController.swift in Sources */,
 				FB5DA4C6277F85E500F52724 /* ImageView.swift in Sources */,

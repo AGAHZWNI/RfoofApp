@@ -5,5 +5,39 @@
   Created by Abdulrahman Gazwani on 02/01/2022.
   
 */
+// landing
+"Rfoof" = "رفوف";
+"WELCOME" = "مرحبا";
 "Register" = "تسجيل";
-"login" = "تسجيل دخول";
+"login" = "تسجيل الدخول";
+
+
+
+// Register
+"Name" = "الاسم";
+"Email" = "الايميل";
+"Password" = "كلمة المرور";
+"Confirm Password" = "تأكيد كلمة المرور";
+"Number" = "الرقم";
+"Register" = "مستخدم جديد";
+"Login" = "تسجيل الدخول";
+
+
+
+// Login
+"Email" = "الايميل";
+"Password" = "كلمة المرور";
+"login" = "دخول";
+"Register" = "مستخدم جديد";
+
+// product
+"Titl" = "العنوان";
+"Description" = "الوصف";
+"Price" = "السعر";
+"Add" = "اضافة";
+
+//details
+"Title" = "العنوان";
+"Description" = "الوصف";
+"price" = "السعر";
+"Number" = "الرقم";

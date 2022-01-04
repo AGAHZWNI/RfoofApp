@@ -5,5 +5,50 @@
   Created by Abdulrahman Gazwani on 02/01/2022.
   
 */
+
+// landing
+"Rfoof" = "Rfoof";
+"WELCOME" = "WELCOME";
 "Register" = "Register";
 "login" = "Login";
+
+
+
+// Register
+"Name" = "Name";
+"Email" = "Email";
+"Password" = "Password";
+"Confirm Password" = "Confirm Password";
+"Number" = "Number";
+"Register" = "Register";
+"login" = "Login";
+
+
+
+
+// Login
+"Email" = "Email";
+"Password" = "Password";
+"login" = "Login";
+"Register" = "Register";
+
+
+
+
+
+// product
+"Titl" = "Titl";
+"Description" = "Description";
+"Price" = "Price";
+"Add" = "Add";
+
+
+//details
+"Title" = "Title";
+"Description" = "Description";
+"price" = "price";
+"Number" = "Number";
+
+
+
+

@@ -33,6 +33,8 @@ class DetailsViewController: UIViewController {
     
    // _______________________________________
     
+    
+    
     @IBOutlet weak var titleDetailsLabel: UILabel!
     
     @IBOutlet weak var descriptionDetailsLabel: UILabel!
@@ -43,7 +45,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var numberDetailsLabel: UILabel!
     
     
-    
+    //----------------------------------------
     
     
     
@@ -51,14 +53,14 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         
-//        titleDetailsLabel.text = "".localized
-//        descriptionDetailsLabel.text = "".localized
-//        priceDetailsLabel.text = "".localized
-//        numberDetailsLabel.text = "".localized
-//        
+        titleDetailsLabel.text = "Title".localized
+        descriptionDetailsLabel.text = "Description".localized
+        priceDetailsLabel.text = "price".localized
+        numberDetailsLabel.text = "Number".localized
         
         
         
+       //---------------------------------------
         
 
         if let selectedProduct = selectedProduct,

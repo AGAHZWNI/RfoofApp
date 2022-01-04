@@ -1,9 +1,6 @@
-//
-//  ProductViewController.swift
-//  Rfoof
-//
-//  Created by Abdulrahman Gazwani on 29/12/2021.
-//
+
+
+
 
 import UIKit
 import Firebase
@@ -34,9 +31,34 @@ class ProductViewController: UIViewController {
     
     let activityIndicator = UIActivityIndicatorView()
 
+    //--------------------------------------
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+    
+    //----------------------------------------
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = "Titl".localized
+        
+        descriptionLabel.text = "Description".localized
+        
+        priceLabel.text = "Price".localized
+        
+        addButton.setTitle("Add".localized, for: .normal)
+        
+        
+        //-------------------------------------
 
         if let selectedProduct = selectedProduct,
            let selectedImage = selectedProductImage{

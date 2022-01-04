@@ -34,13 +34,22 @@ class RegisterViewController: UIViewController {
     
     }
     
+    //localiztion
+    
     @IBOutlet weak var nameRegisterLabel: UILabel!
     @IBOutlet weak var emailRegisterLabel: UILabel!
     @IBOutlet weak var passwoardRegisterLabel: UILabel!
     @IBOutlet weak var confirmRegisterLabel: UILabel!
     @IBOutlet weak var numberRegisterLabel: UILabel!
     
+    @IBOutlet weak var registerButtn: UIButton!
     
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
+    
+    
+    //-------------------------------------
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -58,19 +67,21 @@ class RegisterViewController: UIViewController {
         
         imagePickerController.delegate = self
         
-    
-//        nameRegisterLabel.text = "".localized
-//        emailRegisterLabel.text = "".localized
-//        passwoardRegisterLabel.text = "".localized
-//        confirmRegisterLabel.text = "".localized
-//        nameRegisterLabel.text = "".localized
-//        
+    //localization
+        nameRegisterLabel.text = "Name".localized
+        emailRegisterLabel.text = "Email".localized
+        passwoardRegisterLabel.text = "Password".localized
         
-     //   regesterButton.setTitle("Register".localized, for: .normal)
+        confirmRegisterLabel.text = "Confirm Password".localized
         
-    
+        numberRegisterLabel.text = "Number".localized
         
         
+        registerButtn.setTitle("Register".localized, for: .normal)
+        
+        loginButton.setTitle("Login".localized, for: .normal)
+        
+       //---------------------------------------
         
     //    imagePickerController.dataSource = self
         
