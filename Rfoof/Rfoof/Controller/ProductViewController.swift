@@ -113,11 +113,18 @@ class ProductViewController: UIViewController {
         
         if let image = productImageView.image,
            let imageData = image.jpegData(compressionQuality: 0.50),
+           
            let title = productTitleTextField.text,
+           
            let description = productDescriptionTextField.text,
            let price = productPriceTextField.text,
+           
             let currentUser = Auth.auth().currentUser {
+            
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
+            
+            
+            
             
             var productId = ""
             if let selectedProduct = selectedProduct {
@@ -128,6 +135,8 @@ class ProductViewController: UIViewController {
                 productId = "\(Firebase.UUID())"
               
             }
+            
+            
             
             let storageRef = Storage.storage().reference(withPath: "Products/\(currentUser.uid)/\(productId)")
             let updloadMeta = StorageMetadata.init()
