@@ -79,6 +79,25 @@ class LandingViewController: UIViewController {
         
         loginButtn.setTitle("login".localized, for: .normal)
         
+        //  sh
+        regesterButton.layer.cornerRadius = 2
+      //  btn.clipsToBounds = true
+        
+        regesterButton.layer.shadowRadius = 10
+        regesterButton.layer.shadowOpacity = 1.0
+        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        regesterButton.layer.shadowColor = UIColor.systemYellow.cgColor
+        
+        // sh 2
+        
+        loginButtn.layer.cornerRadius = 2
+      //  btn.clipsToBounds = true
+        
+        loginButtn.layer.shadowRadius = 10
+        loginButtn.layer.shadowOpacity = 1.0
+        loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
+        loginButtn.layer.shadowColor = UIColor.systemYellow.cgColor
+        
         
         
         
