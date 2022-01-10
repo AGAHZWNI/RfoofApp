@@ -66,40 +66,61 @@ class LandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        
-        
-        nameAppLabel.text = "Rfoof".localized
-        
-        welcomeLabel.text = "WELCOME".localized
         
         
         regesterButton.setTitle("Register".localized, for: .normal)
         
         loginButtn.setTitle("login".localized, for: .normal)
         
+        nameAppLabel.text = "Rfoof".localized
+        
+        welcomeLabel.text = "WELCOME".localized
+        
+        
+        
+      //  inmation
+        
+        
+//        nameAppLabel.isHidden = true
+//        welcomeLabel.isHidden = true
+//
+//        let tapGesture = UIGestureRecognizer(target: self, action: #selector(onClickView))
+//        self.view.addGestureRecognizer(tapGesture)
+
+
+        
+        
+//        nameAppLabel.text = "Rfoof".localized
+//
+//        welcomeLabel.text = "WELCOME".localized
+//
+        
+//        regesterButton.setTitle("Register".localized, for: .normal)
+//
+//        loginButtn.setTitle("login".localized, for: .normal)
+//
         //  sh
-        regesterButton.layer.cornerRadius = 2
-      //  btn.clipsToBounds = true
+//        regesterButton.layer.cornerRadius = 2
+//      //  btn.clipsToBounds = true
+//
+//        regesterButton.layer.shadowRadius = 10
+//        regesterButton.layer.shadowOpacity = 1.0
+//        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+//        regesterButton.layer.shadowColor = UIColor.black.cgColor
+//
+//        // sh 2
+//
+//        loginButtn.layer.cornerRadius = 2
+//      //  btn.clipsToBounds = true
+//
+//        loginButtn.layer.shadowRadius = 10
+//        loginButtn.layer.shadowOpacity = 1.0
+//        loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
+//        loginButtn.layer.shadowColor = UIColor.green.cgColor
+//
         
-        regesterButton.layer.shadowRadius = 10
-        regesterButton.layer.shadowOpacity = 1.0
-        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
-        regesterButton.layer.shadowColor = UIColor.systemYellow.cgColor
-        
-        // sh 2
-        
-        loginButtn.layer.cornerRadius = 2
-      //  btn.clipsToBounds = true
-        
-        loginButtn.layer.shadowRadius = 10
-        loginButtn.layer.shadowOpacity = 1.0
-        loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
-        loginButtn.layer.shadowColor = UIColor.systemYellow.cgColor
-        
-        
-        
+       // onClickView()
         
     }
     
@@ -115,6 +136,33 @@ class LandingViewController: UIViewController {
         }
     }
 
+//
+//    @objc
+//        func onClickView() {
+//
+//
+//            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+//                self.welcomeLabel.isHidden = false
+//                self.welcomeLabel.transform = CGAffineTransform(translationX: 0, y: -120)
+//
+//            }) { ( _ ) in
+//
+//                UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+//                    self.nameAppLabel.isHidden = false
+//                    self.nameAppLabel.transform = CGAffineTransform(translationX: 0, y: -90)
+//                }, completion : nil)
+//
+//                   // print(" Animation")
+//
+//
+//
+//
+//
+//                }
+//
+//
+//
+//}
 
+        
 }
-

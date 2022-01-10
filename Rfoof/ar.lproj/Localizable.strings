@@ -34,7 +34,9 @@
 "Titl" = "العنوان";
 "Description" = "الوصف";
 "Price" = "السعر";
-"Add" = "اضافة";
+"Add Product" = "اضافة منتج";
+
+
 
 //details
 "Title" = "العنوان";

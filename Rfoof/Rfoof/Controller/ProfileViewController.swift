@@ -46,6 +46,11 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
+        
+        
        getCurrenUserData()
         
 //        nameProfileLabel.text = "".localized
@@ -58,6 +63,10 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func editprofileButton(_ sender: Any) {
+        
+        
+    }
     
 //    @IBAction func handelEditAccount(_ sender: Any) {
 //

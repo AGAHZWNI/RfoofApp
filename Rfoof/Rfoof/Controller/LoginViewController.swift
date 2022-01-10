@@ -16,6 +16,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
+    @IBOutlet weak var errorMessageLabel: UILabel!
+    
+    
     //-------------------------------------
     
     @IBOutlet weak var emailLoginLabel: UILabel!
@@ -53,6 +57,17 @@ class LoginViewController: UIViewController {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             
             Auth.auth().signIn(withEmail: email, password: passwoad) { authResult, error in
+                
+                if error == nil {
+                    print ("Login succesfully")
+                    
+                }else {
+                    print(error?.localizedDescription as Any)
+                    Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+                    self.errorMessageLabel.text = error?.localizedDescription
+                }
+                
+                
                 if let _ = authResult {
                     if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController") as? UITabBarController {
                         vc.modalPresentationStyle = .fullScreen

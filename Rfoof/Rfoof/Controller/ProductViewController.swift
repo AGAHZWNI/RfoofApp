@@ -55,7 +55,9 @@ class ProductViewController: UIViewController {
         
         priceLabel.text = "Price".localized
         
-        addButton.setTitle("Add".localized, for: .normal)
+       // registerButtonTwo.setTitle("Register".localized, for: .normal)
+        
+        addButton.setTitle("Add Product".localized, for: .normal)
         
         
         //-------------------------------------
