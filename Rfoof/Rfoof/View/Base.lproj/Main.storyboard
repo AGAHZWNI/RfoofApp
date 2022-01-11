@@ -93,11 +93,11 @@
             <objects>
                 <viewController id="wIs-EH-SZl" customClass="LoginViewController" customModule="Rfoof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TnN-ID-Nne">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-XL-Dl2">
-                                <rect key="frame" x="16" y="126" width="337" height="405"/>
+                                <rect key="frame" x="16" y="82" width="337" height="405"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-pF-qzY">
                                         <rect key="frame" x="0.0" y="0.0" width="337" height="140"/>
@@ -141,6 +141,7 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-57-G1s">
                                         <rect key="frame" x="0.0" y="226" width="337" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -667,11 +668,11 @@
             <objects>
                 <viewController id="7jc-Mk-AWg" customClass="RegisterViewController" customModule="Rfoof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Abo-SR-cBT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Hl5-cC-bZN">
-                                <rect key="frame" x="16" y="54" width="343" height="570"/>
+                                <rect key="frame" x="16" y="10" width="343" height="594"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-u4-ld7">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
@@ -686,7 +687,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GP6-3I-Tx8">
-                                        <rect key="frame" x="0.0" y="150" width="343" height="324"/>
+                                        <rect key="frame" x="0.0" y="154.5" width="343" height="324"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6do-VZ-hq6">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -746,7 +747,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xkH-hQ-11X">
-                                        <rect key="frame" x="0.0" y="498" width="343" height="72"/>
+                                        <rect key="frame" x="0.0" y="522" width="343" height="72"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-87-kAQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
@@ -863,7 +864,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="EBX-T4-oaB"/>
         <segue reference="Ov2-hJ-pSL"/>
-        <segue reference="4S1-kM-iGK"/>
+        <segue reference="PCA-PQ-mP6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.74117654560000001" green="0.77254903320000001" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
@@ -888,6 +889,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
