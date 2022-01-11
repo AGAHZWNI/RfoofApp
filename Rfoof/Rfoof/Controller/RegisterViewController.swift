@@ -47,6 +47,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     
+    @IBOutlet weak var errorRegessterLabel: UILabel!
     
     
     //-------------------------------------
@@ -103,6 +104,16 @@ class RegisterViewController: UIViewController {
             
             Auth.auth().createUser(withEmail: email, password: password) { authResult,error in
                         
+                if let error = error {
+                    self.errorRegessterLabel.text = error.localizedDescription
+                    
+                    Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+                }
+                
+                
+                
+                
+                
            //     print("with Result",authResult,authResult?.user.uid)
                 
                 if let error = error {

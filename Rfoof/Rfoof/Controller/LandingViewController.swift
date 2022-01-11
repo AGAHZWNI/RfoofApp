@@ -81,7 +81,7 @@ class LandingViewController: UIViewController {
         
       //  inmation
         
-        
+//
 //        nameAppLabel.isHidden = true
 //        welcomeLabel.isHidden = true
 //
@@ -89,7 +89,7 @@ class LandingViewController: UIViewController {
 //        self.view.addGestureRecognizer(tapGesture)
 
 
-        
+        //------------------------------------------------------------------------
         
 //        nameAppLabel.text = "Rfoof".localized
 //
@@ -99,6 +99,8 @@ class LandingViewController: UIViewController {
 //        regesterButton.setTitle("Register".localized, for: .normal)
 //
 //        loginButtn.setTitle("login".localized, for: .normal)
+        
+        //-------------------------------------------------------------------------------
 //
         //  sh
 //        regesterButton.layer.cornerRadius = 2
@@ -107,8 +109,8 @@ class LandingViewController: UIViewController {
 //        regesterButton.layer.shadowRadius = 10
 //        regesterButton.layer.shadowOpacity = 1.0
 //        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
-//        regesterButton.layer.shadowColor = UIColor.black.cgColor
-//
+//        regesterButton.layer.shadowColor = UIColor.systemMint.cgColor
+
 //        // sh 2
 //
 //        loginButtn.layer.cornerRadius = 2
@@ -120,7 +122,7 @@ class LandingViewController: UIViewController {
 //        loginButtn.layer.shadowColor = UIColor.green.cgColor
 //
         
-       // onClickView()
+     //   onClickView()
         
     }
     
