@@ -81,13 +81,13 @@ class LandingViewController: UIViewController {
         
       //  inmation
         
-//
+////
 //        nameAppLabel.isHidden = true
 //        welcomeLabel.isHidden = true
 //
 //        let tapGesture = UIGestureRecognizer(target: self, action: #selector(onClickView))
 //        self.view.addGestureRecognizer(tapGesture)
-
+//
 
         //------------------------------------------------------------------------
         

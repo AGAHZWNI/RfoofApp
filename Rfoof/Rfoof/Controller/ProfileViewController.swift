@@ -19,7 +19,27 @@ class ProfileViewController: UIViewController {
     
     
     
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: UIImageView!{
+    
+    didSet{
+        profileImageView.layer.borderColor = UIColor.systemYellow.cgColor
+        profileImageView.layer.borderWidth = 3.0
+      
+        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
+        
+        profileImageView.layer.masksToBounds = true
+        profileImageView.isUserInteractionEnabled = true
+        
+        
+           
+    
+        
+        
+    }
+    
+    }
+    
+    
     
    
 //    @IBOutlet weak var nameUpdateTextField: UITextField!
@@ -42,7 +62,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var numberProfileLabel: UILabel!
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        getCurrenUserData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
