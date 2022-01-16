@@ -8,8 +8,8 @@
 ## Demo 
 
 
-![] (DarkMode.gif) 
-![] (lightMode.gif)
+![](DarkMode.gif) 
+![](lightMode.gif)
 
 ## ERD & user stories 
 
