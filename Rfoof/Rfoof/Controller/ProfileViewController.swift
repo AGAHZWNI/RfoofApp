@@ -66,6 +66,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        editProfileBtn.layer.cornerRadius = 15
         
     
         

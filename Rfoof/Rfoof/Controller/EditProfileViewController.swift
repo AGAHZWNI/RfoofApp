@@ -57,6 +57,8 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
         
+        saveProfileButton.layer.cornerRadius = 15 
+        
         
         editNameProfileLabel.text = "Name".localized
         editNumberLabel.text = "Number".localized

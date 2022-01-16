@@ -36,6 +36,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
+        loginButtontwo.layer.cornerRadius = 10
+        registerButtonTwo.layer.cornerRadius = 10
+        
+        
+        emailTextField.delegate = self
+        
+        passwordTextField.delegate = self
+        
         //  Kayboard
           view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
           
@@ -89,4 +98,12 @@ class LoginViewController: UIViewController {
     }
     
 
+}
+
+extension LoginViewController : UITextFieldDelegate {
+    func textFieldShouldReturn (_
+                                textField : UITextField) -> Bool {
+        textField.resignFirstResponder() 
+
+}
 }

@@ -46,6 +46,8 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addButton.layer.cornerRadius = 15 
+        
         //  Kayboard
           view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
           
@@ -73,14 +75,14 @@ class ProductViewController: UIViewController {
             productImageView.image = selectedImage
             productPriceTextField.text = selectedProduct.price
             
-            actionButton.setTitle("Update Product", for: .normal)
+            actionButton.setTitle("Update Product".localized, for: .normal)
             
             let deleteBarButton = UIBarButtonItem(image:UIImage(systemName: "trash.fill"), style: .plain, target: self,action: #selector(handleDelete))
             
             self.navigationItem.rightBarButtonItem = deleteBarButton
             
         } else {
-            actionButton.setTitle("Add Product", for: .normal)
+            actionButton.setTitle("Add Product".localized, for: .normal)
             self.navigationItem.rightBarButtonItem = nil
         }
     }

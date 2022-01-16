@@ -76,6 +76,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerButtn.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = 15
+        
         imagePickerController.delegate = self
         
     //localization

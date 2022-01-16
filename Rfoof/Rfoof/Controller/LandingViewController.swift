@@ -11,6 +11,8 @@ class LandingViewController: UIViewController {
     
     @IBOutlet weak var nameAppLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    
     @IBOutlet weak var regesterButton: UIButton!
     @IBOutlet weak var loginButtn: UIButton!
     
@@ -63,8 +65,8 @@ class LandingViewController: UIViewController {
         
         
         
-        regesterButton.layer.cornerRadius = 15
-        loginButtn.layer.cornerRadius = 15
+     //   regesterButton.layer.cornerRadius = 30
+     //   loginButtn.layer.cornerRadius = 15
         
 
         
@@ -90,25 +92,25 @@ class LandingViewController: UIViewController {
 //
 
       
-        //  sh
-//        regesterButton.layer.cornerRadius = 2
-//      //  btn.clipsToBounds = true
-//
-//        regesterButton.layer.shadowRadius = 10
-//        regesterButton.layer.shadowOpacity = 1.0
-//        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
-//        regesterButton.layer.shadowColor = UIColor.systemMint.cgColor
+         // sh
+        regesterButton.layer.cornerRadius = 15
+      //  btn.clipsToBounds = true
 
-//        // sh 2
-//
-//        loginButtn.layer.cornerRadius = 2
-//      //  btn.clipsToBounds = true
-//
-//        loginButtn.layer.shadowRadius = 10
-//        loginButtn.layer.shadowOpacity = 1.0
-//        loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
-//        loginButtn.layer.shadowColor = UIColor.green.cgColor
-//
+        regesterButton.layer.shadowRadius = 10
+        regesterButton.layer.shadowOpacity = 1.0
+        regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        regesterButton.layer.shadowColor = UIColor.systemMint.cgColor
+
+        // sh 2
+
+        loginButtn.layer.cornerRadius = 15
+      //  btn.clipsToBounds = true
+
+        loginButtn.layer.shadowRadius = 10
+        loginButtn.layer.shadowOpacity = 1.0
+        loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
+        loginButtn.layer.shadowColor = UIColor.systemMint.cgColor
+
         
      //   onClickView()
         
