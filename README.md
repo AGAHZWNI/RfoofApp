@@ -21,7 +21,7 @@
 - user can delete his product. 
 
 
-![](User stories & ERD.png) 
+![](User stories&ERD.png) 
 
 
 ## FrameWork 
