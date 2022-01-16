@@ -7,7 +7,7 @@
 
 ## Demo 
 
-![](lightMode.gif)
+![](LightMode.gif)
 ![](DarkMode.gif) 
 
 
