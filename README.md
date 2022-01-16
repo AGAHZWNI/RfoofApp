@@ -7,9 +7,9 @@
 
 ## Demo 
 
-
-![](DarkMode.gif) 
 ![](lightMode.gif)
+![](DarkMode.gif) 
+
 
 ## ERD & user stories 
 
