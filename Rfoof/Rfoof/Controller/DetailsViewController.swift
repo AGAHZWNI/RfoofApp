@@ -33,7 +33,7 @@ class DetailsViewController: UIViewController {
     
    // _______________________________________
     
-    
+    // localization
     
     @IBOutlet weak var titleDetailsLabel: UILabel!
     
@@ -52,6 +52,8 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // localization
         
         titleDetailsLabel.text = "Title".localized
         descriptionDetailsLabel.text = "Description".localized

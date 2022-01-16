@@ -42,12 +42,6 @@ class ProfileViewController: UIViewController {
     
     
    
-//    @IBOutlet weak var nameUpdateTextField: UITextField!
-//    
-//    
-//    @IBOutlet weak var numberUpdateTextField: UITextField!
-//    
-//    
     @IBOutlet weak var nameUserLabel: UILabel!
     
     @IBOutlet weak var numberUserLabel: UILabel!
@@ -55,12 +49,16 @@ class ProfileViewController: UIViewController {
     
    // ---------------------------------------------------------------
     
+ //   loclization
     
     @IBOutlet weak var nameProfileLabel: UILabel!
     
     
     @IBOutlet weak var numberProfileLabel: UILabel!
+    @IBOutlet weak var editProfileBtn: UIButton!
     
+    
+    //----------------------------------------------
     
     override func viewWillAppear(_ animated: Bool) {
         getCurrenUserData()
@@ -69,18 +67,18 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
-        
-        
+    
         
        getCurrenUserData()
         
-//        nameProfileLabel.text = "".localized
-//        ddescriptionLabel.text = "".localized
-//        numberProfileLabel.text = "".localized
-//        
+        //-----------------------------------------
         
+        nameProfileLabel.text = "Name".localized
+
+        numberProfileLabel.text = "Number".localized
         
+        editProfileBtn.setTitle("Edit".localized, for: .normal)
+       //-----------------------------------------
 
         // Do any additional setup after loading the view.
     }
@@ -90,60 +88,7 @@ class ProfileViewController: UIViewController {
         
     }
     
-//    @IBAction func handelEditAccount(_ sender: Any) {
-//
-//        if let image = profileImageView.image,
-//           let imageData = image.jpegData(compressionQuality: 0.50),
-//           let userName = nameUpdateTextField.text,
-//
-//            let numberUser = numberUpdateTextField.text,
-//
-//           let currentUser = Auth.auth().currentUser {
-//
-//            Activity.showIndicator(parentView: self.view, childView: activityIndicator)
-//
-//            let storageRef = Storage.storage().reference(withPath: "User/\(currentUser.uid)")
-//            let updloadMeta = StorageMetadata.init()
-//            updloadMeta.contentType = "image/jpeg"
-//            storageRef.putData(imageData, metadata: updloadMeta) {
-//                StorageMetadata , error in
-//                if let error = error {
-//                    print("Upload error",error.localizedDescription)
-//                }
-//
-//                storageRef.downloadURL{ url, error in
-//                    var userData = [String:Any]()
-//                    if let url = url {
-//                        let db = Firestore.firestore()
-//                        let ref = db.collection("users")
-//                        userData = [
-//                            "id": currentUser.uid,
-//                            "name" : userName,
-//                            "number" : numberUser,
-//                     //      "email" : currentUser.email,
-//                            "imageUrl" : url.absoluteString
-//                        ]
-//                        ref.document(currentUser.uid).setData(userData)
-//                        { error in
-//
-//                   //         ref.document(productId).setData(productData) { error in
-//                            if let error = error {
-//                                print("FireStore Error",error.localizedDescription)
-//
-//                            }
-//                            Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
-//                            self.navigationController?.popViewController(animated: true)
-//                        }
-//                    }
-//
-//            }
-//        }
-//
-//    }
-    
-    
-    
-    
+
     
     func getCurrenUserData() {
         let refrance = Firestore.firestore()
@@ -179,42 +124,7 @@ class ProfileViewController: UIViewController {
 }
 
 
-//extension ProfileViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-//@objc func chooseImage() {
-//    self.showAlert()
-//}
-//private func showAlert() {
-//
-//    let alert = UIAlertController(title: "Choose Profile Picture", message: "From where you want to pick this image?", preferredStyle: .actionSheet)
-//    alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: {(action: UIAlertAction) in
-//        self.getImage(fromSourceType: .camera)
-//    }))
-//    alert.addAction(UIAlertAction(title: "Photo Album", style: .default, handler: {(action: UIAlertAction) in
-//        self.getImage(fromSourceType: .photoLibrary)
-//    }))
-//    alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
-//    self.present(alert, animated: true, completion: nil)
-//}
-////get image from source type
-//private func getImage(fromSourceType sourceType: UIImagePickerController.SourceType) {
-//
-//    //Check is source type available
-//    if UIImagePickerController.isSourceTypeAvailable(sourceType) {
-//
-//        let imagePickerController = UIImagePickerController()
-//        imagePickerController.delegate = self
-//        imagePickerController.sourceType = sourceType
-//        self.present(imagePickerController, animated: true, completion: nil)
-//    }
-//}
-//func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//    guard let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-//    profileImageView.image = chosenImage
-//    dismiss(animated: true, completion: nil)
-//}
-//func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-//    picker.dismiss(animated: true, completion: nil)
-//}
+
 
 
 

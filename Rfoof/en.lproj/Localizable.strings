@@ -12,7 +12,7 @@
 "Register" = "Register";
 "login" = "Login";
 
-
+//------------------------------------------------
 
 // Register
 "Name" = "Name";
@@ -24,7 +24,7 @@
 "login" = "Login";
 
 
-
+//----------------------------------------------
 
 // Login
 "Email" = "Email";
@@ -33,7 +33,7 @@
 "Register" = "Register";
 
 
-
+//-----------------------------------------------
 
 
 // product
@@ -42,6 +42,8 @@
 "Price" = "Price";
 "Add Product" = "Add Product";
 
+//-----------------------------------------------
+
 
 //details
 "Title" = "Title";
@@ -49,6 +51,25 @@
 "price" = "price";
 "Number" = "Number";
 
+//-----------------------------------------------
+
+// profile
+
+"Name" = "Name";
+
+"Number" = "Number";
+
+"Edit" = "Edit";
 
 
 
+//-----------------------------------------------
+
+// Edit Profile
+
+
+"Name" = "Name";
+
+"Number" = "Number";
+
+"save" = "save";

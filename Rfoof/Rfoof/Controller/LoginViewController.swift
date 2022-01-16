@@ -36,6 +36,12 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         
+        //  Kayboard
+          view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+          
+       //_____________________________________________________________________
+       
+        
         //-------------------------------------
         emailLoginLabel.text = "Email".localized
         passwordLoginLabel.text = "Password".localized

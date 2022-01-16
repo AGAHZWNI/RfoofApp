@@ -33,14 +33,11 @@ class ProductViewController: UIViewController {
 
     //--------------------------------------
     
+    // localization
+    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
-    
-    
     @IBOutlet weak var priceLabel: UILabel!
-    
-    
     @IBOutlet weak var addButton: UIButton!
     
     
@@ -49,15 +46,22 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //  Kayboard
+          view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+          
+       //_____________________________________________________________________
+       
+        
+        
+        
         titleLabel.text = "Titl".localized
         
         descriptionLabel.text = "Description".localized
         
         priceLabel.text = "Price".localized
         
-       // registerButtonTwo.setTitle("Register".localized, for: .normal)
         
-        addButton.setTitle("Add Product".localized, for: .normal)
+        actionButton.setTitle("Add Product".localized, for: .normal)
         
         
         //-------------------------------------

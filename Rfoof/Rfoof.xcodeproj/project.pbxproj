@@ -58,6 +58,7 @@
 /* Begin PBXFileReference section */
 		FB1593ED2779E14E00825A61 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FB1593EF2779E83A00825A61 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FB5CE096279043EA0010B585 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		FB5DA4C5277F85E500F52724 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FB603FBD278AC02800B05C40 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		FB62FFA8277AE91B002C7216 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -428,6 +429,7 @@
 				FB71A9692779B8DE001F9843 /* Base */,
 				FB6486972782242D00564F6C /* ar */,
 				FB64869B278224EE00564F6C /* fr */,
+				FB5CE096279043EA0010B585 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

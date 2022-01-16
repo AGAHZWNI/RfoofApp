@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import Firebase
+
 class EditProfileViewController: UIViewController {
 
     let imagePickerController = UIImagePickerController()
@@ -35,9 +36,16 @@ class EditProfileViewController: UIViewController {
       }
     }
     
-  
+    // loclization
+    
+    @IBOutlet weak var editNameProfileLabel: UILabel!
+    
+    @IBOutlet weak var editNumberLabel: UILabel!
     
     
+    @IBOutlet weak var saveProfileButton: UIButton!
+    
+    //-----------------------------------------
     
     
     @IBOutlet weak var userNameTextFieldInAccountDetails: UITextField!
@@ -48,6 +56,22 @@ class EditProfileViewController: UIViewController {
     }
     override func viewDidLoad() {
       super.viewDidLoad()
+        
+        
+        editNameProfileLabel.text = "Name".localized
+        editNumberLabel.text = "Number".localized
+        
+        saveProfileButton.setTitle("save".localized, for: .normal)
+        
+        //---------------------------------------
+        
+        //  Kayboard
+          view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+          
+       //_____________________________________________________________________
+       
+        
+        
       navigationItem.backBarButtonItem?.tintColor = .link
       imagePickerController.delegate = self
       getCurrentUserData()

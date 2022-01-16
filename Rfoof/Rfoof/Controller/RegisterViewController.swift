@@ -17,7 +17,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userImageView: UIImageView!{
     
     didSet{
-        userImageView.layer.borderColor = UIColor.systemGreen.cgColor
+        
+    
+        userImageView.layer.borderColor = UIColor.systemYellow.cgColor
+        
+     //   self.userImageView.tintColor = UIColor.init(red: 242 / 255, green: 175 / 255, blue: 72 / 255, alpha: 1)
+        
+        
+        
         userImageView.layer.borderWidth = 3.0
       
         userImageView.layer.cornerRadius = userImageView.bounds.height / 2
@@ -65,6 +72,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var numberTextField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -86,6 +94,13 @@ class RegisterViewController: UIViewController {
         
        //---------------------------------------
         
+      //  Kayboard
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+        
+     //_____________________________________________________________________
+        
+        
+        
     //    imagePickerController.dataSource = self
         
         // Do any additional setup after loading the view.
@@ -101,6 +116,7 @@ class RegisterViewController: UIViewController {
            let confirmPassword = confirmPasswordTextField.text,
            let number = numberTextField.text,
            
+            
             password == confirmPassword {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             
@@ -173,8 +189,17 @@ class RegisterViewController: UIViewController {
                 
                 
                 }
-        }
+            }
         
+    }else {
+        if passwordTextField.text !=
+            confirmRegisterLabel.text! {
+            errorRegessterLabel.text =
+            "PasswordnotCorecct".localized
+            
+        }else {
+            errorRegessterLabel.text = "Empty"
+        }
     }
     
     }

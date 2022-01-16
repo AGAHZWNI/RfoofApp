@@ -1,26 +1,20 @@
-//
-//  ViewController.swift
-//  Rfoof
-//
-//  Created by Abdulrahman Gazwani on 27/12/2021.
-//
+
+
+
 
 import UIKit
 
 class LandingViewController: UIViewController {
 
     
+    
+    
     @IBOutlet weak var nameAppLabel: UILabel!
-    
     @IBOutlet weak var welcomeLabel: UILabel!
-    
-    
     @IBOutlet weak var regesterButton: UIButton!
-    
-    
     @IBOutlet weak var loginButtn: UIButton!
     
-    
+    // localization -----------------------------------------------------------------
     @IBOutlet weak var languageSegmentControl: UISegmentedControl! {
         didSet {
             if let lang = UserDefaults.standard.string(forKey: "currentLanguage") {
@@ -56,7 +50,7 @@ class LandingViewController: UIViewController {
         }
     }
     
-    
+  //-----------------------------------------------------------------------------------
     
     
     
@@ -67,6 +61,12 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        regesterButton.layer.cornerRadius = 15
+        loginButtn.layer.cornerRadius = 15
+        
+
         
         
         regesterButton.setTitle("Register".localized, for: .normal)
@@ -89,19 +89,7 @@ class LandingViewController: UIViewController {
 //        self.view.addGestureRecognizer(tapGesture)
 //
 
-        //------------------------------------------------------------------------
-        
-//        nameAppLabel.text = "Rfoof".localized
-//
-//        welcomeLabel.text = "WELCOME".localized
-//
-        
-//        regesterButton.setTitle("Register".localized, for: .normal)
-//
-//        loginButtn.setTitle("login".localized, for: .normal)
-        
-        //-------------------------------------------------------------------------------
-//
+      
         //  sh
 //        regesterButton.layer.cornerRadius = 2
 //      //  btn.clipsToBounds = true
