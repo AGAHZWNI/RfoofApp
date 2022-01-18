@@ -119,22 +119,46 @@ var products = [Product]()
     
     }
     
-    @IBAction func handleLogout(_ sender: Any) {
+    @IBAction func handleLogout(_ sender: Any){
         
-        do {
-            try Auth.auth().signOut()
-            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LandingNavigationController")as? UINavigationController{
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
-            }
-            
-        } catch {
-            print("ERROR in signout",error.localizedDescription)
-        
-        
-        }
-        
+//        do {
+//            try Auth.auth().signOut()
+//            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LandingNavigationController")as? UINavigationController{
+//                vc.modalPresentationStyle = .fullScreen
+//                self.present(vc, animated: true, completion: nil)
+//            }
+//
+//        } catch {
+//            print("ERROR in signout",error.localizedDescription)
+//
+//            showAlertView()
+//        }
+        showAlertView()
     }
+    
+    // N
+    func showAlertView(){
+        let alert = UIAlertController(title: "Exit".localized, message: "are you sure".localized, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes".localized, style: .destructive, handler: {action in
+          do {
+          try Auth.auth().signOut()
+          if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LandingNavigationController") as? UINavigationController {
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+          }
+        } catch {
+          print("ERROR in signout",error.localizedDescription)
+        }
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel2".localized, style: .default, handler: nil))
+        present(alert,animated: true,completion: nil)
+      }
+    
+    
+    
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
