@@ -22,7 +22,9 @@
 "Number" = "Number";
 "Register" = "Register";
 "login" = "Login";
-
+"Photo Album" = "Photo Album";
+"camera" = "camera";
+"cancle" = "cancle";
 
 //----------------------------------------------
 
@@ -74,3 +76,9 @@
 "Number" = "Number";
 
 "save" = "save";
+
+"chose Picture" = "chose Picture";
+" Camera " = " Camera ";
+" Photo Album " = " Photo Album ";
+" Cancle " = " Cancle ";
+

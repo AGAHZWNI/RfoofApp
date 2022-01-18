@@ -99,7 +99,7 @@ class LandingViewController: UIViewController {
         regesterButton.layer.shadowRadius = 10
         regesterButton.layer.shadowOpacity = 1.0
         regesterButton.layer.shadowOffset = CGSize(width: 3, height: 3)
-        regesterButton.layer.shadowColor = UIColor.systemMint.cgColor
+        regesterButton.layer.shadowColor = UIColor.black.cgColor
 
         // sh 2
 
@@ -109,7 +109,7 @@ class LandingViewController: UIViewController {
         loginButtn.layer.shadowRadius = 10
         loginButtn.layer.shadowOpacity = 1.0
         loginButtn.layer.shadowOffset = CGSize(width: 3, height: 3)
-        loginButtn.layer.shadowColor = UIColor.systemMint.cgColor
+        loginButtn.layer.shadowColor = UIColor.black.cgColor
 
         
      //   onClickView()

@@ -220,14 +220,14 @@ extension RegisterViewController : UIImagePickerControllerDelegate,UINavigationC
     func showAlert() {
         let alert = UIAlertController(title: "choose profile picture", message: "where do you want to pick your image from? ", preferredStyle: .actionSheet)
         
-        let cameraAction = UIAlertAction(title:"camera", style: .default){ Action in
+        let cameraAction = UIAlertAction(title:"camera".localized, style: .default){ Action in
             self .getImage(from:.camera)
         }
-        let galaryAction = UIAlertAction(title: "Photo Album", style: .default) { Action in
+        let galaryAction = UIAlertAction(title: "Photo Album".localized, style: .default) { Action in
             self .getImage(from:.photoLibrary)
         }
-        let dismissAction = UIAlertAction(title: "cancle", style: .default) { Action in
-            self .dismiss(animated: true, completion: nil)
+        let dismissAction = UIAlertAction(title: "cancle".localized, style: .default) { Action in
+//            self .dismiss(animated: true, completion: nil)
         }
         alert.addAction(cameraAction)
         alert.addAction(galaryAction)
