@@ -57,6 +57,9 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "backButton".localized, style: .plain, target: nil, action: nil)
+        
+        
         saveProfileButton.layer.cornerRadius = 15 
         
         

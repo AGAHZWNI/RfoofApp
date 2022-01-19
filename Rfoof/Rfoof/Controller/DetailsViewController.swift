@@ -53,6 +53,8 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "backButton".localized, style: .plain, target: nil, action: nil)
+        
         // localization
         
         titleDetailsLabel.text = "Title".localized

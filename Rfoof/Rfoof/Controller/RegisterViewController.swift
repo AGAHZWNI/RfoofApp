@@ -59,6 +59,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var errorRegessterLabel: UILabel!
     
     
+   
     //-------------------------------------
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -75,6 +76,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "backButton".localized, style: .plain, target: nil, action: nil)
         
         registerButtn.layer.cornerRadius = 15
         loginButton.layer.cornerRadius = 15

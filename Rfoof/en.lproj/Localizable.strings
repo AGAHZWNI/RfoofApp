@@ -25,7 +25,7 @@
 "Photo Album" = "Photo Album";
 "camera" = "camera";
 "cancle" = "cancle";
-
+"backButton" = "back";
 //----------------------------------------------
 
 // Login
@@ -36,6 +36,11 @@
 
 
 //-----------------------------------------------
+
+"Exit" = "Exit";
+"are you sure" = "are you sure";
+"Yes" = "Yes";
+"Cancel" = "Cancel";
 
 
 // product

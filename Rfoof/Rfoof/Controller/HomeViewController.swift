@@ -32,7 +32,7 @@ var products = [Product]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "backButton".localized, style: .plain, target: nil, action: nil)
         
         getProducts()
         
@@ -150,7 +150,7 @@ var products = [Product]()
           print("ERROR in signout",error.localizedDescription)
         }
         }))
-        alert.addAction(UIAlertAction(title: "Cancel2".localized, style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel".localized, style: .default, handler: nil))
         present(alert,animated: true,completion: nil)
       }
     

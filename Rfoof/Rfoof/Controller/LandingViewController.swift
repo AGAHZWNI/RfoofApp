@@ -63,7 +63,7 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "backButton".localized, style: .plain, target: nil, action: nil)
         
      //   regesterButton.layer.cornerRadius = 30
      //   loginButtn.layer.cornerRadius = 15
